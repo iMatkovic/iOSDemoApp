@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: bfcdfec8837a8ff7e3f6a5d6396bb5551a3aaa84
+PODS:
+  - Alamofire (4.7.2)
+  - Kingfisher (4.7.0)
+  - SwiftLint (0.25.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Kingfisher (~> 4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Kingfisher
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+
+PODFILE CHECKSUM: fa0af02d93f4e3a3efed7212a7cc8a8811525df3
 
 COCOAPODS: 1.5.0

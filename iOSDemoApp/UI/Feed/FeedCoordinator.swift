@@ -20,7 +20,7 @@ final class FeedCoordinator: Coordinator {
     }
 
     private func createFeedViewController() -> UIViewController {
-        let viewController = UIViewController()
+        let viewController = FeedViewController()
         viewController.view.backgroundColor = .green
         navigationController.viewControllers = [viewController]
         return navigationController

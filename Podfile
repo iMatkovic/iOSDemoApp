@@ -4,8 +4,10 @@
 target 'iOSDemoApp' do
   use_frameworks!
   pod 'SwiftLint'
-
-  target 'iOSDemoAppTests' do
+  pod 'Alamofire', '~> 4.7'
+  pod 'Kingfisher', '~> 4.0'
+  
+target 'iOSDemoAppTests' do
     inherit! :search_paths
     # Pods for testing
   end

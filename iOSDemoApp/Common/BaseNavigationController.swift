@@ -29,10 +29,6 @@ class BaseNavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     func goBack() {
         self.popViewController(animated: true)
     }

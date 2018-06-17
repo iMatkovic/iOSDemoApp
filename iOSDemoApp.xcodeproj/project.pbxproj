@@ -17,10 +17,24 @@
 		2C786B7820D65BFD00D22F1A /* ToDoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7720D65BFD00D22F1A /* ToDoCoordinator.swift */; };
 		2C786B7A20D65C9300D22F1A /* UITabBarItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7920D65C9300D22F1A /* UITabBarItem+Extensions.swift */; };
 		2C786B7C20D65E0700D22F1A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7B20D65E0700D22F1A /* UIViewController+Extensions.swift */; };
+		2C786B7E20D665B200D22F1A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7D20D665B200D22F1A /* DataService.swift */; };
+		2C786B8020D709A900D22F1A /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7F20D709A900D22F1A /* ApiConfig.swift */; };
+		2C786B8220D70ACC00D22F1A /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8120D70ACC00D22F1A /* ServiceFactory.swift */; };
+		2C786B8420D70B9400D22F1A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8320D70B9400D22F1A /* FeedViewModel.swift */; };
+		2C786B8620D70BA900D22F1A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8520D70BA900D22F1A /* FeedViewController.swift */; };
+		2C786B8820D70BB700D22F1A /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C786B8720D70BB700D22F1A /* FeedViewController.storyboard */; };
+		2C786B8A20D70BFB00D22F1A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8920D70BFB00D22F1A /* BaseViewController.swift */; };
 		2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFC520D652AA009DC57F /* AppDelegate.swift */; };
 		2CB9FFCD20D652AC009DC57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCC20D652AC009DC57F /* Assets.xcassets */; };
 		2CB9FFD020D652AC009DC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCE20D652AC009DC57F /* LaunchScreen.storyboard */; };
 		2CB9FFDB20D652AC009DC57F /* iOSDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFDA20D652AC009DC57F /* iOSDemoAppTests.swift */; };
+		2CF90F3F20D717D400AAD67D /* NetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */; };
+		2CF90F4120D7180D00AAD67D /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4020D7180D00AAD67D /* ServiceResult.swift */; };
+		2CF90F4320D7182300AAD67D /* NetworkConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */; };
+		2CF90F4620D71BC000AAD67D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4520D71BC000AAD67D /* Post.swift */; };
+		2CF90F4920D71C5600AAD67D /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4820D71C5600AAD67D /* FeedService.swift */; };
+		2CF90F4C20D71E5900AAD67D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4A20D71E5900AAD67D /* FeedTableViewCell.swift */; };
+		2CF90F4D20D71E5900AAD67D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF90F4B20D71E5900AAD67D /* FeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +56,13 @@
 		2C786B7720D65BFD00D22F1A /* ToDoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCoordinator.swift; sourceTree = "<group>"; };
 		2C786B7920D65C9300D22F1A /* UITabBarItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extensions.swift"; sourceTree = "<group>"; };
 		2C786B7B20D65E0700D22F1A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2C786B7D20D665B200D22F1A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		2C786B7F20D709A900D22F1A /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		2C786B8120D70ACC00D22F1A /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		2C786B8320D70B9400D22F1A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		2C786B8520D70BA900D22F1A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2C786B8720D70BB700D22F1A /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		2C786B8920D70BFB00D22F1A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2CB9FFC220D652AA009DC57F /* iOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9FFC520D652AA009DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB9FFCC20D652AC009DC57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +71,13 @@
 		2CB9FFD620D652AC009DC57F /* iOSDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9FFDA20D652AC009DC57F /* iOSDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDemoAppTests.swift; sourceTree = "<group>"; };
 		2CB9FFDC20D652AC009DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLogger.swift; sourceTree = "<group>"; };
+		2CF90F4020D7180D00AAD67D /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkConfigProtocol.swift; path = /Users/ivan/Desktop/iOSDemoApp/iOSDemoApp/Services/NetworkConfigProtocol.swift; sourceTree = "<absolute>"; };
+		2CF90F4520D71BC000AAD67D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2CF90F4820D71C5600AAD67D /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		2CF90F4A20D71E5900AAD67D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		2CF90F4B20D71E5900AAD67D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		4D57ABDD1AC023EAA209F580 /* Pods-iOSDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDemoApp/Pods-iOSDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4FD36ECFEB1443C263BF0708 /* Pods_iOSDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		636908CD94CCF840930BDF19 /* Pods-iOSDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDemoApp/Pods-iOSDemoApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +111,7 @@
 			children = (
 				2C31480320D65841004CC1FD /* Coordinator.swift */,
 				2C786B7320D65B2200D22F1A /* BaseNavigationController.swift */,
+				2C786B8920D70BFB00D22F1A /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -91,6 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				2C786B7120D65ABC00D22F1A /* FeedCoordinator.swift */,
+				2C786B8320D70B9400D22F1A /* FeedViewModel.swift */,
+				2C786B8520D70BA900D22F1A /* FeedViewController.swift */,
+				2C786B8720D70BB700D22F1A /* FeedViewController.storyboard */,
+				2CF90F4E20D71F8D00AAD67D /* FeedCell */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -137,6 +170,7 @@
 				2CB9FFE520D6544E009DC57F /* Application */,
 				2CB9FFE920D654B7009DC57F /* Extensions */,
 				2CB9FFEA20D654C1009DC57F /* Services */,
+				2CF90F4420D71BB200AAD67D /* Models */,
 				2C31480220D65828004CC1FD /* Common */,
 				2CB9FFE720D65473009DC57F /* UI */,
 				2CB9FFE620D65465009DC57F /* Resources */,
@@ -158,6 +192,7 @@
 			children = (
 				2CB9FFD120D652AC009DC57F /* Info.plist */,
 				2CB9FFC520D652AA009DC57F /* AppDelegate.swift */,
+				2C786B7F20D709A900D22F1A /* ApiConfig.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -202,8 +237,39 @@
 		2CB9FFEA20D654C1009DC57F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2CF90F4720D71C3700AAD67D /* Networking */,
+				2CF90F4820D71C5600AAD67D /* FeedService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2CF90F4420D71BB200AAD67D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF90F4520D71BC000AAD67D /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF90F4720D71C3700AAD67D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */,
+				2C786B8120D70ACC00D22F1A /* ServiceFactory.swift */,
+				2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */,
+				2C786B7D20D665B200D22F1A /* DataService.swift */,
+				2CF90F4020D7180D00AAD67D /* ServiceResult.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2CF90F4E20D71F8D00AAD67D /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF90F4A20D71E5900AAD67D /* FeedTableViewCell.swift */,
+				2CF90F4B20D71E5900AAD67D /* FeedTableViewCell.xib */,
+			);
+			path = FeedCell;
 			sourceTree = "<group>";
 		};
 		D54FDB6B059A126F26D3BE51 /* Pods */ = {
@@ -238,6 +304,7 @@
 				2CB9FFBF20D652AA009DC57F /* Frameworks */,
 				2CB9FFC020D652AA009DC57F /* Resources */,
 				2C31480520D658BB004CC1FD /* SwiftLint */,
+				B230423DF713A95B2CB24961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C786B8820D70BB700D22F1A /* FeedViewController.storyboard in Resources */,
+				2CF90F4D20D71E5900AAD67D /* FeedTableViewCell.xib in Resources */,
 				2CB9FFD020D652AC009DC57F /* LaunchScreen.storyboard in Resources */,
 				2CB9FFCD20D652AC009DC57F /* Assets.xcassets in Resources */,
 			);
@@ -375,6 +444,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B230423DF713A95B2CB24961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSDemoApp/Pods-iOSDemoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDemoApp/Pods-iOSDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -383,14 +472,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C786B7220D65ABC00D22F1A /* FeedCoordinator.swift in Sources */,
+				2C786B7E20D665B200D22F1A /* DataService.swift in Sources */,
+				2CF90F4120D7180D00AAD67D /* ServiceResult.swift in Sources */,
 				2C31480420D65841004CC1FD /* Coordinator.swift in Sources */,
 				2C786B7620D65BE700D22F1A /* AlbumCoordinator.swift in Sources */,
 				2C786B6D20D659C100D22F1A /* MainCoordinator.swift in Sources */,
+				2C786B8A20D70BFB00D22F1A /* BaseViewController.swift in Sources */,
 				2C786B7C20D65E0700D22F1A /* UIViewController+Extensions.swift in Sources */,
+				2C786B8620D70BA900D22F1A /* FeedViewController.swift in Sources */,
+				2CF90F4920D71C5600AAD67D /* FeedService.swift in Sources */,
+				2CF90F4320D7182300AAD67D /* NetworkConfigProtocol.swift in Sources */,
 				2C786B7A20D65C9300D22F1A /* UITabBarItem+Extensions.swift in Sources */,
 				2C786B7420D65B2200D22F1A /* BaseNavigationController.swift in Sources */,
+				2C786B8220D70ACC00D22F1A /* ServiceFactory.swift in Sources */,
+				2C786B8020D709A900D22F1A /* ApiConfig.swift in Sources */,
 				2C786B7820D65BFD00D22F1A /* ToDoCoordinator.swift in Sources */,
+				2CF90F4C20D71E5900AAD67D /* FeedTableViewCell.swift in Sources */,
 				2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */,
+				2CF90F4620D71BC000AAD67D /* Post.swift in Sources */,
+				2C786B8420D70B9400D22F1A /* FeedViewModel.swift in Sources */,
+				2CF90F3F20D717D400AAD67D /* NetworkingLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
