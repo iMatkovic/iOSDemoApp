@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01F4140CB8B5D1AE8CF3AC88 /* Pods_iOSDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD36ECFEB1443C263BF0708 /* Pods_iOSDemoAppTests.framework */; };
 		0AA5403660D3DCE5EB7E0475 /* Pods_iOSDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3415927E88F582E055EB274 /* Pods_iOSDemoApp.framework */; };
+		2C31480420D65841004CC1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31480320D65841004CC1FD /* Coordinator.swift */; };
 		2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFC520D652AA009DC57F /* AppDelegate.swift */; };
 		2CB9FFCD20D652AC009DC57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCC20D652AC009DC57F /* Assets.xcassets */; };
 		2CB9FFD020D652AC009DC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCE20D652AC009DC57F /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C31480320D65841004CC1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2CB9FFC220D652AA009DC57F /* iOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9FFC520D652AA009DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB9FFCC20D652AC009DC57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C31480220D65828004CC1FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C31480320D65841004CC1FD /* Coordinator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2CB9FFB920D652AA009DC57F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 				2CB9FFE520D6544E009DC57F /* Application */,
 				2CB9FFE920D654B7009DC57F /* Extensions */,
 				2CB9FFEA20D654C1009DC57F /* Services */,
+				2C31480220D65828004CC1FD /* Common */,
 				2CB9FFE720D65473009DC57F /* UI */,
 				2CB9FFE620D65465009DC57F /* Resources */,
 			);
@@ -311,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C31480420D65841004CC1FD /* Coordinator.swift in Sources */,
 				2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +479,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E5KB66DD6;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = imatkovic.iOSDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -483,7 +498,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E5KB66DD6;
 				INFOPLIST_FILE = iOSDemoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = imatkovic.iOSDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -500,7 +518,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E5KB66DD6;
 				INFOPLIST_FILE = iOSDemoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = imatkovic.iOSDemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -518,7 +540,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E5KB66DD6;
 				INFOPLIST_FILE = iOSDemoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = imatkovic.iOSDemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
