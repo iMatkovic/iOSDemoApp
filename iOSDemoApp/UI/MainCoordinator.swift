@@ -12,19 +12,22 @@ import Foundation
 
 class MainCoordinator: NSObject, Coordinator {
     
-    private var persistenceService: PersistenceServiceProtocol
-    private var authenticationCoordinator: AuthenticationCoordinator?
-    
-    init(_ persistenceService: PersistenceServiceProtocol) {
-        self.persistenceService = persistenceService
-    }
+//    private var persistenceService: PersistenceServiceProtocol
+//    private var authenticationCoordinator: AuthenticationCoordinator?
+//
+//    init(_ persistenceService: PersistenceServiceProtocol) {
+//        self.persistenceService = persistenceService
+//    }
     
     fileprivate var childCoordinators: [Coordinator] = [
+        FeedCoordinator(),
+        ToDoCoordinator(),
+        AlbumCoordinator()
     ]
     
     @discardableResult
     func start() -> UIViewController {
-        return UIViewController()
+            return startFeed()
     }
     
     
@@ -41,6 +44,12 @@ extension MainCoordinator {
     
     fileprivate func tabBarItem(for coordinator: Coordinator) -> UITabBarItem {
         switch coordinator {
+        case is FeedCoordinator:
+            return .feed
+        case is ToDoCoordinator:
+            return .todo
+        case is AlbumCoordinator:
+            return .album
         default:
             fatalError("No tab bar set for this coordinator!")
         }
@@ -59,7 +68,6 @@ extension MainCoordinator {
         tabBarController.tabBar.backgroundColor = UIColor.white
         tabBarController.tabBar.backgroundImage =  UIImage()
         tabBarController.tabBar.backgroundColor = .white
-        tabBarController.delegate = self
         tabBarController.viewControllers = viewControllers
         return tabBarController
     }

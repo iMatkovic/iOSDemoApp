@@ -10,6 +10,13 @@
 		01F4140CB8B5D1AE8CF3AC88 /* Pods_iOSDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD36ECFEB1443C263BF0708 /* Pods_iOSDemoAppTests.framework */; };
 		0AA5403660D3DCE5EB7E0475 /* Pods_iOSDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3415927E88F582E055EB274 /* Pods_iOSDemoApp.framework */; };
 		2C31480420D65841004CC1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31480320D65841004CC1FD /* Coordinator.swift */; };
+		2C786B6D20D659C100D22F1A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B6C20D659C100D22F1A /* MainCoordinator.swift */; };
+		2C786B7220D65ABC00D22F1A /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7120D65ABC00D22F1A /* FeedCoordinator.swift */; };
+		2C786B7420D65B2200D22F1A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7320D65B2200D22F1A /* BaseNavigationController.swift */; };
+		2C786B7620D65BE700D22F1A /* AlbumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7520D65BE700D22F1A /* AlbumCoordinator.swift */; };
+		2C786B7820D65BFD00D22F1A /* ToDoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7720D65BFD00D22F1A /* ToDoCoordinator.swift */; };
+		2C786B7A20D65C9300D22F1A /* UITabBarItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7920D65C9300D22F1A /* UITabBarItem+Extensions.swift */; };
+		2C786B7C20D65E0700D22F1A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B7B20D65E0700D22F1A /* UIViewController+Extensions.swift */; };
 		2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFC520D652AA009DC57F /* AppDelegate.swift */; };
 		2CB9FFCD20D652AC009DC57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCC20D652AC009DC57F /* Assets.xcassets */; };
 		2CB9FFD020D652AC009DC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCE20D652AC009DC57F /* LaunchScreen.storyboard */; };
@@ -28,6 +35,13 @@
 
 /* Begin PBXFileReference section */
 		2C31480320D65841004CC1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2C786B6C20D659C100D22F1A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2C786B7120D65ABC00D22F1A /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		2C786B7320D65B2200D22F1A /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		2C786B7520D65BE700D22F1A /* AlbumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCoordinator.swift; sourceTree = "<group>"; };
+		2C786B7720D65BFD00D22F1A /* ToDoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCoordinator.swift; sourceTree = "<group>"; };
+		2C786B7920D65C9300D22F1A /* UITabBarItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extensions.swift"; sourceTree = "<group>"; };
+		2C786B7B20D65E0700D22F1A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		2CB9FFC220D652AA009DC57F /* iOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9FFC520D652AA009DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB9FFCC20D652AC009DC57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,8 +82,33 @@
 			isa = PBXGroup;
 			children = (
 				2C31480320D65841004CC1FD /* Coordinator.swift */,
+				2C786B7320D65B2200D22F1A /* BaseNavigationController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		2C786B6E20D65A7E00D22F1A /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2C786B7120D65ABC00D22F1A /* FeedCoordinator.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2C786B6F20D65A8600D22F1A /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				2C786B7720D65BFD00D22F1A /* ToDoCoordinator.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		2C786B7020D65A8C00D22F1A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2C786B7520D65BE700D22F1A /* AlbumCoordinator.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		2CB9FFB920D652AA009DC57F = {
@@ -135,6 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				2CB9FFE820D65482009DC57F /* LaunchScreen */,
+				2C786B6C20D659C100D22F1A /* MainCoordinator.swift */,
+				2C786B6E20D65A7E00D22F1A /* Feed */,
+				2C786B7020D65A8C00D22F1A /* Album */,
+				2C786B6F20D65A8600D22F1A /* ToDo */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -150,6 +193,8 @@
 		2CB9FFE920D654B7009DC57F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2C786B7920D65C9300D22F1A /* UITabBarItem+Extensions.swift */,
+				2C786B7B20D65E0700D22F1A /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,7 +382,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C786B7220D65ABC00D22F1A /* FeedCoordinator.swift in Sources */,
 				2C31480420D65841004CC1FD /* Coordinator.swift in Sources */,
+				2C786B7620D65BE700D22F1A /* AlbumCoordinator.swift in Sources */,
+				2C786B6D20D659C100D22F1A /* MainCoordinator.swift in Sources */,
+				2C786B7C20D65E0700D22F1A /* UIViewController+Extensions.swift in Sources */,
+				2C786B7A20D65C9300D22F1A /* UITabBarItem+Extensions.swift in Sources */,
+				2C786B7420D65B2200D22F1A /* BaseNavigationController.swift in Sources */,
+				2C786B7820D65BFD00D22F1A /* ToDoCoordinator.swift in Sources */,
 				2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
