@@ -22,6 +22,7 @@ final class FeedCoordinator: Coordinator {
     private func createFeedViewController() -> UIViewController {
         let viewController = FeedViewController.instance()
         let viewModel = FeedViewModel(ServiceFactory.feedService)
+        viewController.title = "Feed"
         viewController.viewModel = viewModel
         navigationController.viewControllers = [viewController]
         return navigationController

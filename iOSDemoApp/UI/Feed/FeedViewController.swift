@@ -26,10 +26,11 @@ class FeedViewController: BaseViewController {
     }
 
     //MARK: - Utility
-
     private func setupTableView() {
         tableView.register(FeedTableViewCell.self)
         tableView.delegate = self
+        tableView.backgroundColor = .martianDark
+        tableView.separatorColor = .martianDarkGray
         tableView.dataSource = self
     }
 
@@ -52,11 +53,12 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell: FeedTableViewCell = tableView.dequeueReusableCell(), let post = viewModel.posts[safe: indexPath.row] else {
             return UITableViewCell()
         }
-
+        
         cell.post = post
         return cell
     }
-
-
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }

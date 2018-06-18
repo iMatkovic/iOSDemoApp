@@ -9,8 +9,21 @@
 import Foundation
 import UIKit
 public typealias EmptyCallback = ()-> Void
-open class BaseViewController: UIViewController {
-    public var onFinished: EmptyCallback?
+class BaseViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .martianDark
+        
+        if let navigationController = self.navigationController as? BaseNavigationController {
+            navigationController.customizeNavigationBar(self.navigationItem)
+        }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 
 extension BaseViewController {

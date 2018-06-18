@@ -10,12 +10,22 @@ import Foundation
 import UIKit
 enum UILabelStyle {
 
-    static let base = UIViewStyle<UILabel> { _ in
-
+    static let base = UIViewStyle<UILabel> { label in
+        label.numberOfLines = 0
     }
 
-    static let headline1White = base.composing { label in
-    
-        label.textColor = .white
+    static let mainBody = base.composing { label in
+        label.font = Font.avenirBook.size(14)
+        label.textColor = UIColor.martiangLightGray
+    }
+
+    static let mainTitle = base.composing { label in
+        label.font = Font.avenirRoman.size(18)
+        label.textColor = UIColor.martianRed
+    }
+
+    static let mainSubtitle = base.composing { label in
+        label.font = Font.avenirRoman.size(14)
+        label.textColor = UIColor.martianRed.withAlphaComponent(0.7)
     }
 }

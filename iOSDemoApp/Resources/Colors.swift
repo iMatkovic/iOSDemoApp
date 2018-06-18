@@ -15,5 +15,9 @@ extension UIColor {
         return UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha)
     }
 
-    static let googleRed = rgb(211, 72, 54)
+    static let martianRed = rgb(239, 64, 89)
+    static let martianDark = rgb(61, 61, 61)
+    static let martianDarkGray = rgb(142, 142, 142)
+    static let martiangGray = rgb(199, 199, 199)
+    static let martiangLightGray = rgb(245, 245, 245)
 }

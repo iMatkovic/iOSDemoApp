@@ -11,7 +11,6 @@ import UIKit
 class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
     @IBOutlet weak var postTitleLabel: UILabel!
-    @IBOutlet weak var userIdLabel: UILabel!
     @IBOutlet weak var postTextLabel: UILabel!
 
     var post: Post? {
@@ -22,7 +21,6 @@ class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
             }
 
             postTitleLabel.text = post.title
-            userIdLabel.text = "\(post.userId)"
             postTextLabel.text = post.body
 
         }
@@ -30,7 +28,12 @@ class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .martianDark
         selectionStyle = .none
+
+        UILabelStyle.mainBody.apply(to: postTextLabel)
+        UILabelStyle.mainTitle.apply(to: postTitleLabel)
+
     }
 
 
