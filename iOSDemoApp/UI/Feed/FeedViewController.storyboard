@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aU4-zv-F03">
+                                <rect key="frame" x="169.5" y="325.5" width="37" height="37"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzq-R4-vjt">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,12 +30,15 @@
                         <constraints>
                             <constraint firstItem="mzq-R4-vjt" firstAttribute="leading" secondItem="LO8-ae-TEp" secondAttribute="leading" id="BDe-Pj-k6M"/>
                             <constraint firstAttribute="trailing" secondItem="mzq-R4-vjt" secondAttribute="trailing" id="PSN-Qb-s70"/>
+                            <constraint firstItem="aU4-zv-F03" firstAttribute="centerY" secondItem="LO8-ae-TEp" secondAttribute="centerY" id="lav-5m-6h7"/>
                             <constraint firstItem="LO8-ae-TEp" firstAttribute="bottom" secondItem="mzq-R4-vjt" secondAttribute="bottom" id="o9l-dI-zWa"/>
                             <constraint firstItem="mzq-R4-vjt" firstAttribute="top" secondItem="LO8-ae-TEp" secondAttribute="top" id="tYX-4J-qbL"/>
+                            <constraint firstItem="aU4-zv-F03" firstAttribute="centerX" secondItem="LO8-ae-TEp" secondAttribute="centerX" id="y1b-tV-BEs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LO8-ae-TEp"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="aU4-zv-F03" id="do4-bp-qRI"/>
                         <outlet property="tableView" destination="mzq-R4-vjt" id="Mb0-CL-8pF"/>
                     </connections>
                 </viewController>

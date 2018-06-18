@@ -7,9 +7,11 @@
 //
 
 import Foundation
+
 protocol FeedServiceProtocol {
     func getAll(onComplete: @escaping ((ServiceResult<[Post]>) -> Void))
 }
+
 class FeedService: FeedServiceProtocol {
 
     let dataService: DataServiceProtocol
@@ -17,7 +19,6 @@ class FeedService: FeedServiceProtocol {
     init(_ dataService: DataServiceProtocol) {
         self.dataService = dataService
     }
-
 
     func getAll(onComplete: @escaping ((ServiceResult<[Post]>) -> Void)) {
         dataService.fetch(url: "/posts") { (result: ServiceResult<[Post]>) in

@@ -10,9 +10,12 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
+    //MARK: - Outlets
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var postTextLabel: UILabel!
 
+
+    //MARK: - Data
     var post: Post? {
         didSet {
 
@@ -22,10 +25,10 @@ class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
             postTitleLabel.text = post.title
             postTextLabel.text = post.body
-
         }
     }
 
+    //MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = .martianDark
@@ -33,7 +36,6 @@ class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
         UILabelStyle.mainBody.apply(to: postTextLabel)
         UILabelStyle.mainTitle.apply(to: postTitleLabel)
-
     }
 
 

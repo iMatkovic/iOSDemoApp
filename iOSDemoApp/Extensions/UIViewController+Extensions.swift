@@ -14,10 +14,10 @@ public protocol RootShowable: class {
 }
 
 extension RootShowable where Self: UIViewController {
-    
+
     public func showAsRoot() {
-        guard  let window = window else {
-            print("WARNING: no window!")
+        guard let window = window else {
+            fatalError("WARNING: no window!")
             return
         }
         window.rootViewController = self
@@ -26,7 +26,7 @@ extension RootShowable where Self: UIViewController {
 }
 
 extension UIViewController: RootShowable {
-    
+
     public var window: UIWindow? {
         var appWindow = view.window
         if appWindow == nil {
@@ -36,8 +36,8 @@ extension UIViewController: RootShowable {
         }
         return appWindow
     }
-    
-    
+
+
     public var contentViewController: UIViewController? {
         if let navigationViewController = self as? UINavigationController {
             return navigationViewController.topViewController?.contentViewController
@@ -45,6 +45,17 @@ extension UIViewController: RootShowable {
             return self
         }
     }
-    
-    
+
+
+    public func showAlert(title: String, message: String? = nil, actions: [UIAlertAction]) {
+
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+        for action in actions {
+            alert.addAction(action)
+        }
+
+        self.present(alert, animated: true, completion: nil)
+    }
+
 }

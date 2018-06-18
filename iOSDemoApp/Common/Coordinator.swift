@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 public protocol Coordinator: class {
-    
     @discardableResult
     func start() -> UIViewController
 }

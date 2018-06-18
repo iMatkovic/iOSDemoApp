@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="iOSDemoApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="iOSDemoApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -44,8 +44,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="postTextLabel" destination="jrc-uV-TTB" id="6k3-68-Mys"/>
-                <outlet property="postTitleLabel" destination="bQ0-lq-c38" id="ZLE-1p-GWd"/>
+                <outlet property="postTextLabel" destination="jrc-uV-TTB" id="upd-al-GvC"/>
+                <outlet property="postTitleLabel" destination="bQ0-lq-c38" id="vyP-iW-EwP"/>
             </connections>
             <point key="canvasLocation" x="-78.5" y="10"/>
         </tableViewCell>

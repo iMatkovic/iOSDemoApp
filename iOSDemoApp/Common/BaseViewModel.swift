@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+public typealias EmptyCallback = () -> Void
+
 class BaseViewModel {
     var onComplete: EmptyCallback?
     var onError: ((String) -> Void)?

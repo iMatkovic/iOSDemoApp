@@ -11,19 +11,19 @@ import UIKit
 import Foundation
 
 class MainCoordinator: NSObject, Coordinator {
-    
+
     fileprivate var childCoordinators: [Coordinator] = [
         FeedCoordinator(),
         ToDoCoordinator(),
         AlbumCoordinator()
     ]
-    
+
     @discardableResult
     func start() -> UIViewController {
-            return startFeed()
+        return startFeed()
     }
-    
-    
+
+
     @discardableResult
     private func startFeed() -> UIViewController {
         let tabBarController = createTabBarController()
@@ -34,7 +34,7 @@ class MainCoordinator: NSObject, Coordinator {
 
 // MARK: - Main tab bar
 extension MainCoordinator {
-    
+
     fileprivate func tabBarItem(for coordinator: Coordinator) -> UITabBarItem {
         switch coordinator {
         case is FeedCoordinator:
@@ -47,20 +47,19 @@ extension MainCoordinator {
             fatalError("No tab bar set for this coordinator!")
         }
     }
-    
+
     fileprivate func createTabBarController() -> UITabBarController {
-        
+
         let tabBarController = UITabBarController()
-        
+
         let viewControllers = childCoordinators.map { coordinator -> UIViewController in
             let vc = coordinator.start()
             vc.tabBarItem = tabBarItem(for: coordinator)
             return vc
         }
-        
-        tabBarController.tabBar.backgroundColor = UIColor.white
-        tabBarController.tabBar.backgroundImage =  UIImage()
-        tabBarController.tabBar.backgroundColor = .white
+
+        tabBarController.tabBar.backgroundColor = .martianDark
+        tabBarController.tabBar.backgroundImage = UIImage()
         tabBarController.viewControllers = viewControllers
         return tabBarController
     }

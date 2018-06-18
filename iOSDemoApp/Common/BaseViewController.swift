@@ -8,13 +8,13 @@
 
 import Foundation
 import UIKit
-public typealias EmptyCallback = ()-> Void
+
 class BaseViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .martianDark
-        
+
         if let navigationController = self.navigationController as? BaseNavigationController {
             navigationController.customizeNavigationBar(self.navigationItem)
         }
@@ -23,11 +23,15 @@ class BaseViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
+    func showOkAlert(_ error: String) {
+        self.showAlert(title: error, actions: [UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)])
+    }
+
 }
 
 extension BaseViewController {
-    
+
     open class func instance() -> Self {
         if let vc = createFromStoryboard(type: self) {
             return vc
@@ -36,23 +40,23 @@ extension BaseViewController {
             return self.init()
         }
     }
-    
+
     private class func createFromStoryboard<T: UIViewController>(type: T.Type) -> T? {
-        
+
         let storyboardName = String(describing: type)
-        
+
         let bundle = Bundle(for: T.self)
-        
+
         guard bundle.path(forResource: storyboardName, ofType: "storyboardc") != nil else {
             return nil
         }
-        
+
         let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
-        
+
         guard let vc = storyboard.instantiateInitialViewController() else {
             print("no vc in storyboard(hint: check initial vc)") ; return nil
         }
-        
+
         return vc as? T
     }
 }

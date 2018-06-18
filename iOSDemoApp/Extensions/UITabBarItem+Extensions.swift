@@ -12,19 +12,19 @@ import UIKit
 extension UITabBarItem {
     
     static var feed: UITabBarItem {
-        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "activity-feed"), selectedImage: #imageLiteral(resourceName: "activity-feed-filled"))
+        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "feed"), selectedImage: #imageLiteral(resourceName: "feedSelected"))
         item.centerImage()
         return item
     }
     
     static var todo: UITabBarItem {
-        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "tasklist"), selectedImage: #imageLiteral(resourceName: "tasklist-filled"))
+        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "todo"), selectedImage: #imageLiteral(resourceName: "todoSelected"))
         item.centerImage()
         return item
     }
     
     static var album: UITabBarItem {
-        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "photo-gallery"), selectedImage: #imageLiteral(resourceName: "photo-gallery-filled"))
+        let item = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "album"), selectedImage: #imageLiteral(resourceName: "albumSelected"))
         item.centerImage()
         return item
     }

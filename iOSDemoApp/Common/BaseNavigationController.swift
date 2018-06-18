@@ -20,7 +20,4 @@ class BaseNavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
     }
 
-    func goBack() {
-        self.popViewController(animated: true)
-    }
 }

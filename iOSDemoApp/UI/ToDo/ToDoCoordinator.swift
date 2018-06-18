@@ -21,7 +21,7 @@ final class ToDoCoordinator: Coordinator {
     
     private func createFeedViewController() -> UIViewController {
         let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
+        viewController.view.backgroundColor = .black
         navigationController.viewControllers = [viewController]
         return navigationController
     }
