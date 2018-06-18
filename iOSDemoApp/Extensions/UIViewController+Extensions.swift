@@ -17,7 +17,7 @@ extension RootShowable where Self: UIViewController {
 
     public func showAsRoot() {
         guard let window = window else {
-            fatalError("WARNING: no window!")
+            print("WARNING: no window!")
             return
         }
         window.rootViewController = self
