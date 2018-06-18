@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="GKk-fU-UIu">
             <objects>
-                <viewController id="fGB-mc-KaH" sceneMemberID="viewController">
+                <viewController id="fGB-mc-KaH" customClass="FeedViewController" customModule="iOSDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WAe-kR-eRy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LO8-ae-TEp"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="mzq-R4-vjt" id="Mb0-CL-8pF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxE-3F-cFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

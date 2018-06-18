@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewCell: UITableViewCell {
+class FeedTableViewCell: UITableViewCell, NibViewable, ReusableView {
 
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var userIdLabel: UILabel!

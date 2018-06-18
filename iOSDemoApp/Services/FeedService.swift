@@ -14,7 +14,7 @@ class FeedService: FeedServiceProtocol {
 
     let dataService: DataServiceProtocol
 
-    init(dataService: DataServiceProtocol) {
+    init(_ dataService: DataServiceProtocol) {
         self.dataService = dataService
     }
 

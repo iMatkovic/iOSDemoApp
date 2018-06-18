@@ -16,4 +16,9 @@ struct ServiceFactory {
         return dataService
     }
 
+    static var feedService: FeedServiceProtocol {
+        let feedService = FeedService(dataService)
+        return feedService
+    }
+
 }

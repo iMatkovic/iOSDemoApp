@@ -12,13 +12,6 @@ import Foundation
 
 class MainCoordinator: NSObject, Coordinator {
     
-//    private var persistenceService: PersistenceServiceProtocol
-//    private var authenticationCoordinator: AuthenticationCoordinator?
-//
-//    init(_ persistenceService: PersistenceServiceProtocol) {
-//        self.persistenceService = persistenceService
-//    }
-    
     fileprivate var childCoordinators: [Coordinator] = [
         FeedCoordinator(),
         ToDoCoordinator(),
