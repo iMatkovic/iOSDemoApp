@@ -33,13 +33,13 @@
 		2C786B8620D70BA900D22F1A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8520D70BA900D22F1A /* FeedViewController.swift */; };
 		2C786B8820D70BB700D22F1A /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C786B8720D70BB700D22F1A /* FeedViewController.storyboard */; };
 		2C786B8A20D70BFB00D22F1A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C786B8920D70BFB00D22F1A /* BaseViewController.swift */; };
+		2CAB09BE20E122BA000EF2A1 /* NetworkConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB09BD20E122BA000EF2A1 /* NetworkConfigProtocol.swift */; };
 		2CB9FFC620D652AA009DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFC520D652AA009DC57F /* AppDelegate.swift */; };
 		2CB9FFCD20D652AC009DC57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCC20D652AC009DC57F /* Assets.xcassets */; };
 		2CB9FFD020D652AC009DC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9FFCE20D652AC009DC57F /* LaunchScreen.storyboard */; };
 		2CB9FFDB20D652AC009DC57F /* iOSDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9FFDA20D652AC009DC57F /* iOSDemoAppTests.swift */; };
 		2CF90F3F20D717D400AAD67D /* NetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */; };
 		2CF90F4120D7180D00AAD67D /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4020D7180D00AAD67D /* ServiceResult.swift */; };
-		2CF90F4320D7182300AAD67D /* NetworkConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */; };
 		2CF90F4620D71BC000AAD67D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4520D71BC000AAD67D /* Post.swift */; };
 		2CF90F4920D71C5600AAD67D /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4820D71C5600AAD67D /* FeedService.swift */; };
 		2CF90F4C20D71E5900AAD67D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF90F4A20D71E5900AAD67D /* FeedTableViewCell.swift */; };
@@ -81,6 +81,7 @@
 		2C786B8520D70BA900D22F1A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2C786B8720D70BB700D22F1A /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		2C786B8920D70BFB00D22F1A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2CAB09BD20E122BA000EF2A1 /* NetworkConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConfigProtocol.swift; path = iOSDemoApp/Services/NetworkConfigProtocol.swift; sourceTree = SOURCE_ROOT; };
 		2CB9FFC220D652AA009DC57F /* iOSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9FFC520D652AA009DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB9FFCC20D652AC009DC57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		2CB9FFDC20D652AC009DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLogger.swift; sourceTree = "<group>"; };
 		2CF90F4020D7180D00AAD67D /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
-		2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkConfigProtocol.swift; path = /Users/ivan/Desktop/iOSDemoApp/iOSDemoApp/Services/NetworkConfigProtocol.swift; sourceTree = "<absolute>"; };
 		2CF90F4520D71BC000AAD67D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2CF90F4820D71C5600AAD67D /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		2CF90F4A20D71E5900AAD67D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -281,9 +281,9 @@
 		2CF90F4720D71C3700AAD67D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2CAB09BD20E122BA000EF2A1 /* NetworkConfigProtocol.swift */,
 				2CF90F3E20D717D400AAD67D /* NetworkingLogger.swift */,
 				2C786B8120D70ACC00D22F1A /* ServiceFactory.swift */,
-				2CF90F4220D7182300AAD67D /* NetworkConfigProtocol.swift */,
 				2C786B7D20D665B200D22F1A /* DataService.swift */,
 				2CF90F4020D7180D00AAD67D /* ServiceResult.swift */,
 			);
@@ -512,7 +512,6 @@
 				2C786B7C20D65E0700D22F1A /* UIViewController+Extensions.swift in Sources */,
 				2C786B8620D70BA900D22F1A /* FeedViewController.swift in Sources */,
 				2CF90F4920D71C5600AAD67D /* FeedService.swift in Sources */,
-				2CF90F4320D7182300AAD67D /* NetworkConfigProtocol.swift in Sources */,
 				2C53908A20D722D1009414B8 /* UITableView+Extensions.swift in Sources */,
 				2C53909A20D73072009414B8 /* Fonts.swift in Sources */,
 				2C786B7A20D65C9300D22F1A /* UITabBarItem+Extensions.swift in Sources */,
@@ -520,6 +519,7 @@
 				2C786B8220D70ACC00D22F1A /* ServiceFactory.swift in Sources */,
 				2C786B8020D709A900D22F1A /* ApiConfig.swift in Sources */,
 				2C786B7820D65BFD00D22F1A /* ToDoCoordinator.swift in Sources */,
+				2CAB09BE20E122BA000EF2A1 /* NetworkConfigProtocol.swift in Sources */,
 				2C53909620D7270A009414B8 /* NibView.swift in Sources */,
 				2C53909220D72567009414B8 /* UIView+Styling.swift in Sources */,
 				2CF90F4C20D71E5900AAD67D /* FeedTableViewCell.swift in Sources */,
