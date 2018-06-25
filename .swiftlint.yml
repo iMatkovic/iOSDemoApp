@@ -1,0 +1,19 @@
+large_tuple:
+    warning: 3
+    error: 5
+disabled_rules: # rule identifiers to exclude from running
+  - line_length
+  - vertical_whitespace
+  - return_arrow_whitespace
+  - trailing_whitespace
+  - variable_name
+  - type_body_length
+  - type_name
+  - opening_brace
+  - mark
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Mocks
+  - Pods
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
+force_cast: warning # implicitly
